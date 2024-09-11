@@ -40,6 +40,21 @@ Download the GoogleService-Info.plist file and add it to your Xcode project.
 4. **Run the app:**
 Open the .xcworkspace file and run the app in Xcode.
 
+
+**Login credentials**
+test999@gmail.com
+test1@gmail.com
+test@gmail.com
+proxyyzx@gmail.com
+faizulkarim28@gmail.com
+
+password: 12345678
+
+
+
+
+
+
 How it Works 🔧
 
 Loading Messages:
