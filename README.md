@@ -46,7 +46,7 @@ How it Works 🔧
 Loading Messages:
 The app uses Firestore’s addSnapshotListener to listen for new messages in real-time:
 
-   ```swift
+    ```swift
 db.collection("chats").document(chatId).collection("messages")
    .order(by: "timestamp")
    .addSnapshotListener { querySnapshot, error in
