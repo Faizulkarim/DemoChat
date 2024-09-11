@@ -34,11 +34,10 @@ Make sure you have CocoaPods installed, then run:
    pod install
 
 3. **Firebase Setup:**
-4. 
 Go to Firebase Console.
 Create a Firebase project and add an iOS app to your project.
 Download the GoogleService-Info.plist file and add it to your Xcode project.
-5. **Run the app:**
+4. **Run the app:**
 Open the .xcworkspace file and run the app in Xcode.
 
 How it Works 🔧
@@ -47,15 +46,15 @@ Loading Messages:
 The app uses Firestore’s addSnapshotListener to listen for new messages in real-time:
 
     ```swift
-db.collection("chats").document(chatId).collection("messages")
-   .order(by: "timestamp")
-   .addSnapshotListener { querySnapshot, error in
+     db.collection("chats").document(chatId).collection("messages")
+     .order(by: "timestamp")
+      .addSnapshotListener { querySnapshot, error in
        if let error = error {
            print("Error fetching messages: \(error)")
            return
        }
        // Process new messages
-   }
+       }
 
 ### Architecture
 [Read further in ARCHITECTURE.md](ARCHITECTURE.md)
